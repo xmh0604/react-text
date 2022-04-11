@@ -84,6 +84,8 @@ const songs = [
   { id: 11, name: '痴心绝对' },
   { id: 42, name: '像我这样的人' },
   { id: 433, name: '南山南' },
+  { id: 431, name: '南山南' },
+  { id: 233, name: '南山南' },
 ]
 
 const dv = (
