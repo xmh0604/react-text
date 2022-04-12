@@ -1,14 +1,19 @@
-import ReactDom from "react-dom";
-
-const title = (
-    <>
-    <h1>阿里腾讯字节跳动</h1>
-    <ul className="dadada">
-        <li>你是谁</li>
-        <li>我是谁</li>
-        <li>他又是谁</li>
-    </ul>
-    </>
-)
-
-ReactDom.render(title,document.querySelector('#root'))
+import { Component } from 'react'
+export default class App1 extends Component {
+  state = {
+    count: 0,
+  }
+  change = () => {
+    this.setState({
+      count: this.state.count + 1,
+    })
+  }
+  render() {
+    return (
+      <div>
+        <h1>计数器：{this.state.count}</h1>
+        <button onClick={this.change}>+1</button>
+      </div>
+    )
+  }
+}
